@@ -14,6 +14,10 @@ Parmi les bugs résolus rapportés par Apache, nous avons choisi celui-ci : [htt
 
 ## Exercice 3
 
+Netflix utilise le "Chaos Engineering" por tester la résilience de son système face aux problèmes qu'il peut rencontrer. Pour cela, les ingénieurs mettent à l'épreuve leur système par des expériences : éteindre une instance de machine virtuelle, mettre de la latence entre les services, injecter des erreurs dans les requêtes et les services ou encore rendre les serveurs d'une zone géographique indisponible. Mais avant de réaliser ces expériences il faut d'abord émettre des hypothèses sur le système et ensuite comparer avec les résultats. Ces résultats sont souvent extraits de l'observation de certaines variables car dire "le système fonctionne normalement" semble être trop peu précis. Ainsi on observe principalement le SPS (stream start per second), le nombre d'abonnements par seconde, la charge du CPU ou le temps pour résoudre une requête à la base de données.
+
+On remarque que Netfix n'est pas la seule entreprise à utiliser le Chaos Engineering. En effet, il est sous-entendu dans le papier que beaucoup d'autres entreprises du numérique qui utilisent des "Large Distributed Systems" utilisent aussi ces méthodes, ex : Amazon, Google, Microsoft, and Facebook.
+
 ## Exercice 4
 
 ## Exercice 5
